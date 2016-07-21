@@ -18,7 +18,7 @@ mkdir img js fonts
 compass init
 rm css/ie.css css/print.css scss/ie.scss scss/print.scss
 echo "@import \"susy\";" >> scss/screen.scss
-Git
+#Git
 git init
 git add .
 compass watch $pfad
