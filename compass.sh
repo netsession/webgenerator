@@ -11,7 +11,6 @@ else exit 0;
 fi
 #Ordner und Seitenstruktur
 mkdir $pfad
-#cp /tmp/config.rb /tmp/index.html $pfad
 cd $pfad
 curl -O https://raw.githubusercontent.com/netsession/webgenerator/master/config.rb
 curl -O https://raw.githubusercontent.com/netsession/webgenerator/master/index.html
