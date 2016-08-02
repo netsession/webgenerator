@@ -11,14 +11,16 @@ else exit 0;
 fi
 #Ordner und Seitenstruktur
 mkdir $pfad
-cp config.rb index.html $pfad
+#cp /tmp/config.rb /tmp/index.html $pfad
 cd $pfad
+curl -O https://raw.githubusercontent.com/netsession/webgenerator/master/config.rb
+curl -O https://raw.githubusercontent.com/netsession/webgenerator/master/index.html
 mkdir img js fonts
 #Compass
 compass init
 rm css/ie.css css/print.css scss/ie.scss scss/print.scss
-echo "@import \"susy\";" >> scss/screen.scss
 #Git
 git init
 git add .
+git commit -m "Initial commit"
 compass watch $pfad
