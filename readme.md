@@ -12,14 +12,15 @@ oder
 
 Generierte Struktur:
 --------------------
-├── assets
-│   ├── config.rb
-│   ├── css
-│   │   ├── style.css
-│   │   └── style.min.css
-│   ├── fonts
-│   ├── img
-│   ├── js
-│   └── scss
-│       └── style.scss
-└── index.html
+
+├── assets<br>
+│   ├── config.rb<br>
+│   ├── css<br>
+│   │   ├── style.css<br>
+│   │   └── style.min.css<br>
+│   ├── fonts<br>
+│   ├── img<br>
+│   ├── js<br>
+│   └── scss<br>
+│       └── style.scss<br>
+└── index.html<br>
