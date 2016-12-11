@@ -12,14 +12,20 @@ fi
 #Ordner und Seitenstruktur
 mkdir $pfad
 cd $pfad
-curl -O https://raw.githubusercontent.com/netsession/webgenerator/master/config.rb
 curl -O https://raw.githubusercontent.com/netsession/webgenerator/master/index.html
+mkdir assets
+cd assets
+curl -O https://raw.githubusercontent.com/netsession/webgenerator/master/config.rb
 mkdir img js fonts
 #Compass
 compass init
-rm css/ie.css css/print.css scss/ie.scss scss/print.scss
+rm -r css/* scss/*
+touch scss/style.scss
+echo '@import "compass/reset";' > scss/style.scss
+echo '@import "susy";' >> scss/style.scss
+cd $pfad
 #Git
 git init
 git add .
 git commit -m "Initial commit"
-compass watch $pfad
+compass watch $pfad/assets
