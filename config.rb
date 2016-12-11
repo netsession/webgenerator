@@ -20,6 +20,6 @@ on_stylesheet_saved do |file|
         },
         'min'
     )
-    Compass.compiler.compile('scss/style.scss', 'css/style.min.css')
+    Compass.compiler.compile('assets/scss/style.scss', 'assets/css/style.min.css')
   end
 end
