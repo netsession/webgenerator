@@ -19,7 +19,7 @@ curl -O https://raw.githubusercontent.com/netsession/webgenerator/master/config.
 mkdir img js fonts
 #Compass
 compass init
-rm -r css/* scss/*
+rm -r css/* scss/* .sass-cache
 touch scss/style.scss
 echo '@import "compass/reset";' > scss/style.scss
 echo '@import "susy";' >> scss/style.scss
