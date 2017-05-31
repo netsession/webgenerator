@@ -3,12 +3,6 @@ Bash Webprojekt Generator
 
 Sass / Compass / Susy / Git
 ---------------------------------------
-Pfade anpassen:
-
-    pfad=$HOME'/Schreibtisch/'$verzeichnis;
-oder
-
-    pfad=/var/www/html/$verzeichnis;
 
 Generierte Struktur:
 --------------------
